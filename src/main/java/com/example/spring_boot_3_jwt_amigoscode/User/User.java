@@ -1,5 +1,6 @@
 package com.example.spring_boot_3_jwt_amigoscode.User;
 
+import com.example.spring_boot_3_jwt_amigoscode.Token.Token;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -35,6 +36,9 @@ public class User implements UserDetails {
 
     @Column
     private String password;
+
+    @OneToMany(mappedBy = "user")
+    private List<Token> tokens;
 
     @Enumerated(EnumType.STRING)
     private Role role;
