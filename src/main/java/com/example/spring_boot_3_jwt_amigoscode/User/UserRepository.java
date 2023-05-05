@@ -1,4 +1,4 @@
-package com.example.spring_boot_3_jwt_amigoscode;
+package com.example.spring_boot_3_jwt_amigoscode.User;
 
 import com.example.spring_boot_3_jwt_amigoscode.User.User;
 import org.springframework.data.jpa.repository.JpaRepository;
